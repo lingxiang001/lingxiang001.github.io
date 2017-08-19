@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>轮播图</title>
+
+<style>
+    img{
+         width:100%
+    }
+    .li_img{
+         width:500px;
+         height:200px;
+         float:left;
+         list-style:none;
+    }
+    .ul_img{
+         width:3000px;
+         padding:0px;
+         margin:0px;
+         transition:all 2s;
+    }
+     .main_div{
+         width:500px;
+         height:200px;
+         overflow:hidden;
+         position:relative;
+         top:100px;
+         left:100px;
+    }
+    .arrows{
+         z-index:9999;
+          position: absolute;
+          
+          padding-top:80px;
+        
+          width:500px;
+    }
+    .arrows span{
+          margin-left:10px;
+          font-size: 3em;
+          color:red;
+    }
+    
+    .arrows span :hover{
+         cursor:pointer;
+         background-color:green;
+    }
+    
+    .div_btn{
+        float:left;
+        border-radius:100px;
+        background-color:aquamarine;
+        width:30px;
+        height:10px;
+        margin-left:10px;
+        margin-top:110px;
+        
+    }
+    .div_btn :hover{
+       background-color:red;
+    }
+    .btn{
+       position:absolute;
+       margin-top:-25px;
+       margin-left:230px;
+    }
+</style>
+<script src="lunou.js"></script>
+</head>
+<body> 
+
+       <div class="main_div">
+              <div class="arrows">
+                     <span title="1" class="arrow"><</span>
+                     <span title="2" class="arrow"  style="float:right">></span>
+              </div>
+            
+              <ul class="ul_img" >
+                    <li class ="li_img" ><a href="#"><img  id ="first" src="images/1.jpg"/></a></li>
+                    <li class ="li_img"><a href="#"><img src="images/2.jpg"/></a></li>
+                    <li class ="li_img"><a href="#"><img src="images/3.jpg"/></a></li>
+                    <li class ="li_img"><a href="#"><img src="images/4.jpg"/></a></li>
+                    <li class ="li_img"><a href="#"><img src="images/5.jpg"/></a></li>
+                    <li class ="li_img"><a href="#"><img src="images/6.jpg"/></a></li>
+                   
+              </ul>
+       </div>
+       <div  class="btn" >
+               <div class="div_btn"></div>
+               <div class="div_btn"></div>
+               <div class="div_btn"></div>
+               <div class="div_btn"></div>
+               <div class="div_btn"></div>
+               <div class="div_btn"></div>
+       </div>
+</body>
+</html>
